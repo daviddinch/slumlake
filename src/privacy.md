@@ -83,7 +83,7 @@ Our service providers store and process information on servers in the United Sta
 
 ## 8. Deleting your account and data
 
-- **In the game:** Store → About & credits → Delete account. This deletes your account and its cloud saves.
+- **In the game:** the speaker button at the top of the screen → Account & about → Delete account. This deletes your account and its cloud saves.
 - **Without the game:** sign in at https://daviddinch.github.io/slumlake/armbar/delete-account.html and delete the account there. It happens straight away.
 
 Deleting your account does not cancel or refund purchases made through Google Play; purchase records held by Google Play and RevenueCat are kept as described in section 7.
@@ -96,7 +96,7 @@ You can delete your account and everything stored with it yourself, from inside 
 
 ## 10. Children
 
-ARMBAR is intended for players aged 13 and over and is not directed at children under 13. We do not knowingly collect personal information from children under 13. A parent or guardian can delete a child's account at any time from inside the game: Store → About & credits → Delete account.
+ARMBAR is intended for players aged 13 and over and is not directed at children under 13. We do not knowingly collect personal information from children under 13. A parent or guardian can delete a child's account at any time from inside the game: the speaker button at the top of the screen → Account & about → Delete account.
 
 ## 11. Security
 
