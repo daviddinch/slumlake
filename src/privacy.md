@@ -8,7 +8,7 @@ _Last updated: 1 October 2026_
 
 ARMBAR: Arm Wrestling Career Simulator ("ARMBAR", "the game") is published by Ali Dinch, an individual in New South Wales, Australia, who publishes games under the name **sLumLake** ("we", "us").
 
-Contact: daviddinch@gmail.com
+Contact: dinchali@gmail.com
 
 This policy explains what information the game handles, why, and what choices you have. It applies to the ARMBAR app on Android.
 
@@ -92,7 +92,7 @@ Deleting your account does not cancel or refund purchases made through Google Pl
 
 Depending on where you live, you may have the right to access, correct, delete or receive a copy of your personal information, to object to or restrict how it is used, and to complain to your local privacy regulator. In Australia that is the Office of the Australian Information Commissioner (oaic.gov.au).
 
-You can delete your account and everything stored with it yourself, from inside the game (section 8). For anything else, contact daviddinch@gmail.com. We will not treat you differently for using your rights.
+You can delete your account and everything stored with it yourself, from inside the game (section 8). For anything else, contact dinchali@gmail.com. We will not treat you differently for using your rights.
 
 ## 10. Children
 
@@ -109,4 +109,4 @@ When the game changes in a way that affects your privacy (for example, when onli
 ## 13. Contact
 
 Ali Dinch, publishing as sLumLake
-daviddinch@gmail.com
+dinchali@gmail.com
