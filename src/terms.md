@@ -102,4 +102,4 @@ We may update this agreement, for example when new features are added. The curre
 ## 14. Contact
 
 Ali Dinch, publishing as sLumLake
-dinchali@gmail.com
+daviddinch@gmail.com
