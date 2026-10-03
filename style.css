@@ -22,6 +22,6 @@ th{background:var(--panel)}
 .card b{display:block;font-size:19px}
 .card span{color:var(--dim);font-size:15px}
 footer{padding-top:18px;padding-bottom:36px;border-top:1px solid var(--line);color:var(--dim);font-size:14.5px}
-/* the studio logo: always on a dark panel, so it reads the same in the light theme */
-.hero{margin:0 0 18px;padding:18px 14px;border-radius:16px;background:radial-gradient(circle at 50% 55%,#16233a,#070b12 75%);border:1px solid var(--line);text-align:center;line-height:0}
+/* the studio logo: on white, as it was drawn, in the light and the dark theme alike */
+.hero{margin:0 0 18px;padding:14px;border-radius:16px;background:#fff;border:1px solid var(--line);text-align:center;line-height:0}
 .hero img{width:min(100%,520px);height:auto}
