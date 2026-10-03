@@ -2,13 +2,13 @@
 
 **ARMBAR: Arm Wrestling Career Simulator**
 
-_Last updated: 1 October 2026_
+_Last updated: 3 October 2026_
 
 Please read this before you play. By installing or playing ARMBAR you agree to it. If you do not agree, do not install or play the game.
 
 ## 1. Who this agreement is with
 
-This agreement is between you and Ali Dinch, an individual in New South Wales, Australia, who publishes games under the name **sLumLake** ("we", "us"). It is not an agreement with Google. Google is not responsible for the game or its content.
+This agreement is between you and Ali Dinch, an individual in New South Wales, Australia, who publishes games under the name **sLumLake simuLations** ("we", "us"). It is not an agreement with Google. Google is not responsible for the game or its content.
 
 Your use of Google Play is also covered by Google's own terms. If those terms and this agreement conflict about how the store works (for example, payments and refunds), Google's terms apply to that point.
 
@@ -101,5 +101,5 @@ We may update this agreement, for example when new features are added. The curre
 
 ## 14. Contact
 
-Ali Dinch, publishing as sLumLake
+Ali Dinch, publishing as sLumLake simuLations
 daviddinch@gmail.com

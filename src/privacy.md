@@ -2,11 +2,11 @@
 
 **ARMBAR: Arm Wrestling Career Simulator**
 
-_Last updated: 1 October 2026_
+_Last updated: 3 October 2026_
 
 ## 1. Who we are
 
-ARMBAR: Arm Wrestling Career Simulator ("ARMBAR", "the game") is published by Ali Dinch, an individual in New South Wales, Australia, who publishes games under the name **sLumLake** ("we", "us").
+ARMBAR: Arm Wrestling Career Simulator ("ARMBAR", "the game") is published by Ali Dinch, an individual in New South Wales, Australia, who publishes games under the name **sLumLake simuLations** ("we", "us").
 
 Contact: daviddinch@gmail.com
 
@@ -108,5 +108,5 @@ When the game changes in a way that affects your privacy (for example, when onli
 
 ## 13. Contact
 
-Ali Dinch, publishing as sLumLake
+Ali Dinch, publishing as sLumLake simuLations
 daviddinch@gmail.com
