@@ -43,7 +43,7 @@ To confirm what you have bought and to restore purchases on a new device, our se
 
 ### 3.4 Names you type
 
-The names you give your puller are checked on your device against a list of blocked words. In the current version they are not shown to other players.
+The names you give your puller are checked on your device against a list of blocked words. They are not shown to anyone else: ARMBAR is a single-player game.
 
 ### 3.5 What we do not collect
 
@@ -104,7 +104,7 @@ Information is sent over encrypted connections, and access to accounts is contro
 
 ## 12. Changes to this policy
 
-When the game changes in a way that affects your privacy (for example, when online player-versus-player features are added), we will update this policy, change the date at the top, and tell you in the game before the change takes effect where the law requires it.
+When the game changes in a way that affects your privacy, we will update this policy, change the date at the top, and tell you in the game before the change takes effect where the law requires it.
 
 ## 13. Contact
 
