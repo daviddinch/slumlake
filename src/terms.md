@@ -38,7 +38,7 @@ You can play as a guest. If you sign in:
 
 - you are responsible for keeping your sign-in details secure and for what happens under your account;
 - your saved careers may be backed up to your account. We take reasonable care of them but cannot promise that a save will never be lost;
-- you can delete your account at any time from the speaker button at the top of the screen → Account & about → Delete account.
+- you can delete your account at any time from the settings button at the top of the screen (the gear; a speaker in earlier versions) → Account & about → Delete account.
 
 How we handle your information is set out in our Privacy Policy at https://daviddinch.github.io/slumlake/armbar/privacy.html.
 
@@ -97,7 +97,7 @@ We may update this agreement, for example when new features are added. The curre
 - **Whole agreement.** This agreement and the Privacy Policy are the whole agreement between you and us about the game.
 - **If part is invalid.** If a court finds part of this agreement invalid, the rest still applies.
 - **No waiver.** If we do not enforce a right straight away, we can still enforce it later.
-- **Music and sound credits** are listed in the game under the speaker button at the top of the screen → Account & about.
+- **Music and sound credits** are listed in the game under the settings button at the top of the screen (the gear; a speaker in earlier versions) → Account & about.
 
 ## 14. Contact
 
