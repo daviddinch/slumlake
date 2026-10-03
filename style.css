@@ -25,3 +25,5 @@ footer{padding-top:18px;padding-bottom:36px;border-top:1px solid var(--line);col
 /* the studio logo: transparent, straight on the page (white page in the light theme, charcoal in the dark one) */
 .hero{margin:0 0 18px;text-align:center;line-height:0}
 .hero img{width:min(100%,520px);height:auto}
+/* a long web address in a paragraph wraps instead of pushing the page wider than the phone */
+p,li{overflow-wrap:anywhere}

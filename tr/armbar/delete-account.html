@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="tr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ARMBAR hesabını sil · ARMBAR</title><link rel="stylesheet" href="../../style.css"><link rel="icon" type="image/png" href="../../favicon.png">
+<style>
+.box{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:18px 20px;margin:18px 0}
+.box h2{margin-top:0}
+.btn{display:block;width:100%;min-height:50px;margin:10px 0;padding:12px 16px;border-radius:10px;border:1px solid var(--line);background:var(--bg);color:var(--ink);font:inherit;font-weight:700;cursor:pointer}
+.btn:disabled{opacity:.5;cursor:default}
+.btn.danger{border-color:#e0245e;color:#ff5c8a}
+.fld{display:block;width:100%;min-height:48px;margin:8px 0;padding:10px 12px;border-radius:10px;border:1px solid var(--line);background:var(--bg);color:var(--ink);font:inherit}
+.msg{margin:10px 0 0;font-weight:600}
+.msg.bad{color:#ff5c8a}.msg.good{color:var(--acc)}
+.who{font-weight:700;overflow-wrap:anywhere}
+[hidden]{display:none!important}
+</style></head><body>
+<header><a href="../index.html">sLumLake simuLations</a><nav><a href="privacy.html">Gizlilik</a><a href="terms.html">Koşullar</a><a href="delete-account.html">Hesabı sil</a><a href="../../armbar/delete-account.html" lang="en">English</a></nav></header>
+<main>
+<h1>ARMBAR hesabını sil</h1>
+<p><strong>ARMBAR: Bilek Güreşi Kariyer Simülatörü</strong>, sLumLake simuLations (Ali Dinch) tarafından yayımlanır.</p>
+<p>Yalnızca Google ile ya da bir e-posta adresiyle giriş yaptıysan bir hesabın vardır. Misafirlerin hesabı yoktur; kariyerleri yalnızca telefonda saklanır ve oyun kaldırıldığında silinir.</p>
+
+<h2>Oyunun içinden</h2>
+<ol><li>ARMBAR'ı aç ve ekranın üstündeki <strong>ayarlar düğmesine</strong> dokun (dişli; eski sürümlerde hoparlör).</li><li><strong>Hesap ve hakkında</strong> seçeneğine dokun.</li><li><strong>Hesabı sil</strong> seçeneğine dokun ve onayla.</li></ol>
+
+<h2>Bu sayfadan, oyun olmadan</h2>
+<p>Oyunda yaptığın gibi giriş yap, sonra hesabı sil. Silme işlemi hemen gerçekleşir.</p>
+
+<div class="box" id="s-load"><p>Yükleniyor…</p></div>
+
+<div class="box" id="s-in" hidden>
+  <h2>1. Giriş yap</h2>
+  <button class="btn" id="b-google">Google ile devam et</button>
+  <p>Ya da oyunda kullandığın e-posta adresi ve şifreyle:</p>
+  <label for="f-email">E-posta</label><input class="fld" id="f-email" type="email" autocomplete="email">
+  <label for="f-pass">Şifre</label><input class="fld" id="f-pass" type="password" autocomplete="current-password">
+  <button class="btn" id="b-email">E-posta ile giriş yap</button>
+  <p class="msg bad" id="m-in" role="alert"></p>
+</div>
+
+<div class="box" id="s-del" hidden>
+  <h2>2. Sil</h2>
+  <p>Giriş yapılan hesap: <span class="who" id="who"></span></p>
+  <p>Bu işlem hesabı ve ona yedeklenmiş bütün kariyerleri siler. Geri alınamaz.</p>
+  <button class="btn danger" id="b-del">Hesabımı sil</button>
+  <div id="confirm" hidden>
+    <p><strong>Emin misin?</strong> Hesabın ve bulut kayıtların kalıcı olarak silinecek.</p>
+    <button class="btn danger" id="b-yes">Evet, şimdi sil</button>
+    <button class="btn" id="b-no">Hayır, hesabım kalsın</button>
+  </div>
+  <button class="btn" id="b-out">Silmeden çıkış yap</button>
+  <p class="msg bad" id="m-del" role="alert"></p>
+</div>
+
+<div class="box" id="s-done" hidden>
+  <h2>Silindi</h2>
+  <p class="msg good">ARMBAR hesabın ve bulut kayıtların silindi.</p>
+  <p>Oyun hâlâ kuruluysa, telefonun kendisine kaydedilmiş kariyerler, oyunu kaldırana ya da verilerini temizleyene kadar orada kalır.</p>
+</div>
+
+<h2>Neler silinir</h2>
+<ul><li>Hesabın: e-posta adresi, görünen ad ve kullanıcı kimliği.</li><li>Bulut kayıtların: hesaba yedeklenmiş bütün kariyerler.</li></ul>
+<h2>Neler saklanır</h2>
+<ul><li>Google Play'in ve satın alma sağlayıcımız RevenueCat'in tuttuğu satın alma kayıtları; vergi ve muhasebe yükümlülüklerini yerine getirmek için gereken süre boyunca. Bu kayıtlar adına değil, bir kullanıcı kimliğine bağlıdır.</li></ul>
+<p>Hesabını silmek satın alımları iade etmez ya da iptal etmez. Ayrıntılar için <a href="privacy.html">Gizlilik Politikası</a>'na bak.</p>
+</main><footer>© 2026 Ali Dinch, sLumLake simuLations adıyla yayımlar · <a href="mailto:daviddinch@gmail.com">daviddinch@gmail.com</a></footer>
+
+<script type="module">
+import { initializeApp } from 'https://www.gstatic.com/firebasejs/12.4.0/firebase-app.js';
+import { getAuth, onAuthStateChanged, GoogleAuthProvider, signInWithPopup, signInWithEmailAndPassword, reauthenticateWithPopup, deleteUser, signOut } from 'https://www.gstatic.com/firebasejs/12.4.0/firebase-auth.js';
+import { getFirestore, doc, deleteDoc, collection, getDocs } from 'https://www.gstatic.com/firebasejs/12.4.0/firebase-firestore.js';
+
+// Public identifiers of the ARMBAR Firebase project (not secrets; access is controlled by sign-in and the database rules).
+const app = initializeApp({
+  apiKey: 'AIzaSyB2lBvVGZBsGJ4_MZ1C5HtcynqPnbwJ86U',
+  authDomain: 'armbar-ce006.firebaseapp.com',
+  projectId: 'armbar-ce006',
+  appId: '1:670985880063:web:db525bc01fb74aeab4e7ca'
+});
+const auth = getAuth(app), db = getFirestore(app), $ = id => document.getElementById(id);
+let done = false;
+const show = id => ['s-load', 's-in', 's-del', 's-done'].forEach(k => { $(k).hidden = k !== id });
+const why = e => {
+  const c = (e && e.code) || '';
+  if (c === 'auth/popup-closed-by-user' || c === 'auth/cancelled-popup-request') return '';
+  if (c === 'auth/popup-blocked') return 'Tarayıcın giriş penceresini engelledi. Bu sayfa için açılır pencerelere izin ver ve yeniden dene.';
+  if (c === 'auth/invalid-credential' || c === 'auth/wrong-password' || c === 'auth/user-not-found' || c === 'auth/invalid-email') return 'Bu e-posta ve şifre bir ARMBAR hesabıyla eşleşmiyor.';
+  if (c === 'auth/too-many-requests') return 'Çok fazla deneme yapıldı. Birkaç dakika bekle ve yeniden dene.';
+  if (c === 'auth/network-request-failed') return 'Bağlantı yok. İnternetini kontrol et ve yeniden dene.';
+  return 'Olmadı. Lütfen yeniden dene. (' + (c || 'error') + ')';
+};
+
+onAuthStateChanged(auth, u => {
+  if (done) return;
+  if (u) { $('who').textContent = u.email || u.displayName || 'your account'; $('confirm').hidden = true; $('b-del').hidden = false; $('m-del').textContent = ''; show('s-del'); }
+  else show('s-in');
+});
+
+$('b-google').onclick = async () => { $('m-in').textContent = ''; try { await signInWithPopup(auth, new GoogleAuthProvider()); } catch (e) { $('m-in').textContent = why(e); } };
+$('b-email').onclick = async () => {
+  $('m-in').textContent = '';
+  try { await signInWithEmailAndPassword(auth, $('f-email').value.trim(), $('f-pass').value); $('f-pass').value = ''; }
+  catch (e) { $('m-in').textContent = why(e); }
+};
+$('b-out').onclick = () => signOut(auth);
+$('b-del').onclick = () => { $('confirm').hidden = false; $('b-del').hidden = true; };
+$('b-no').onclick = () => { $('confirm').hidden = true; $('b-del').hidden = false; };
+
+// Everything the game stores for a player is under users/{uid}: the save slots, then the account itself.
+async function wipe(u) {
+  const slots = await getDocs(collection(db, 'users', u.uid, 'slots'));
+  for (const d of slots.docs) await deleteDoc(d.ref);
+  await deleteDoc(doc(db, 'users', u.uid));
+  await deleteUser(u);
+}
+$('b-yes').onclick = async () => {
+  const u = auth.currentUser; if (!u) return;
+  $('b-yes').disabled = $('b-no').disabled = true; $('m-del').textContent = '';
+  try {
+    try { await wipe(u); }
+    catch (e) {
+      // Firebase asks for a fresh sign-in before deleting an account that signed in a while ago
+      if (e.code !== 'auth/requires-recent-login') throw e;
+      if (u.providerData.some(p => p.providerId === 'google.com')) { await reauthenticateWithPopup(u, new GoogleAuthProvider()); await wipe(u); }
+      else { await signOut(auth); $('m-in').textContent = 'Güvenliğin için yeniden giriş yap, sonra sil.'; return; }
+    }
+    done = true; show('s-done');
+  } catch (e) { $('m-del').textContent = why(e) || 'İptal edildi. Hesabın silinmedi.'; }
+  finally { $('b-yes').disabled = $('b-no').disabled = false; }
+};
+</script>
+</body></html>
