@@ -107,8 +107,7 @@ $('b-no').onclick = () => { $('confirm').hidden = true; $('b-del').hidden = fals
 
 // Everything the game stores for a player is under users/{uid}: the save slots, then the account itself.
 async function wipe(u) {
-  const slots = await getDocs(collection(db, 'users', u.uid, 'slots'));
-  for (const d of slots.docs) await deleteDoc(d.ref);
+  for (const name of ['slots', 'medicine']) { const docs = await getDocs(collection(db, 'users', u.uid, name)); for (const d of docs.docs) await deleteDoc(d.ref); }
   await deleteDoc(doc(db, 'users', u.uid));
   await deleteUser(u);
 }

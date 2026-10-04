@@ -2,7 +2,7 @@
 
 **ARMBAR: Arm Wrestling Career Simulator**
 
-_Last updated: 3 October 2026_
+_Last updated: 4 October 2026_
 
 Please read this before you play. By installing or playing ARMBAR you agree to it. If you do not agree, do not install or play the game.
 
@@ -97,6 +97,7 @@ We may update this agreement, for example when new features are added. The curre
 - **Whole agreement.** This agreement and the Privacy Policy are the whole agreement between you and us about the game.
 - **If part is invalid.** If a court finds part of this agreement invalid, the rest still applies.
 - **No waiver.** If we do not enforce a right straight away, we can still enforce it later.
+- **Music.** The music in the game is by Fesliyan Studios (https://www.FesliyanStudios.com) and is used under a commercial music license held by Ali Dinch for sLumLake simuLations.
 - **Music and sound credits** are listed in the game under the settings button at the top of the screen (the gear; a speaker in earlier versions) → Account & about.
 
 ## 14. Contact

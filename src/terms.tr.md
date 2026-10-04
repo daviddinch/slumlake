@@ -2,7 +2,7 @@
 
 **ARMBAR: Bilek Güreşi Kariyer Simülatörü**
 
-_Son güncelleme: 3 Ekim 2026_
+_Son güncelleme: 4 Ekim 2026_
 
 _Bu metin, İngilizce Kullanım Koşulları'nın Türkçe çevirisidir. İki metin arasında fark olursa İngilizce metin esas alınır: https://daviddinch.github.io/slumlake/armbar/terms.html_
 
@@ -99,6 +99,7 @@ Bu sözleşmeyi, örneğin yeni özellikler eklendiğinde güncelleyebiliriz. G�
 - **Sözleşmenin bütünü.** Bu sözleşme ile Gizlilik Politikası, oyun hakkında seninle aramızdaki sözleşmenin tamamıdır.
 - **Bir bölüm geçersizse.** Bir mahkeme bu sözleşmenin bir bölümünü geçersiz bulursa, geri kalanı geçerli olmaya devam eder.
 - **Feragat yok.** Bir hakkı hemen kullanmamış olmamız, onu sonradan kullanamayacağımız anlamına gelmez.
+- **Müzik.** Oyundaki müzik Fesliyan Studios'a (https://www.FesliyanStudios.com) aittir ve Ali Dinch'in sLumLake simuLations için aldığı ticari müzik lisansı kapsamında kullanılmaktadır.
 - **Müzik ve ses emeği geçenler**, oyunda ekranın üstündeki ayarlar düğmesi (dişli; eski sürümlerde hoparlör) → Hesap ve hakkında altında listelenmiştir.
 
 ## 14. İletişim
