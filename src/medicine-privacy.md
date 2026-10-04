@@ -84,7 +84,7 @@ Our service providers store and process information on servers in the United Sta
 - **In the game:** the settings button (the gear) at the top of the screen → Account → Delete account. This deletes your account and its cloud saves.
 - **Without the game:** sign in at https://daviddinch.github.io/slumlake/medicine/delete-account.html and delete the account there. It happens straight away.
 
-Because the account is shared, deleting it removes it from every sLumLake game, together with the saves each of them backed up to it. A life saved on the phone itself stays there until you uninstall the game or clear its data.
+Because the account is shared, deleting it removes it from every sLumLake game, together with the saves each of them backed up to it. In Medicine Career Simulator the account's life is removed from your phone as well. A life you made as a guest, without signing in, stays on the phone until you uninstall the game or clear its data.
 
 ## 9. Your rights
 
